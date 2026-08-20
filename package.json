@@ -13,13 +13,22 @@
   "devDependencies": {
     "@babel/core": "^8.0.1",
     "@babel/plugin-transform-runtime": "^8.0.1",
-    "@babel/runtime-corejs3": "^7.15.4"
+    "@babel/runtime-corejs3": "^8.0.0"
   },
   "dependencies": {
-    "concurrently": "^5.3.0",
-    "node-gyp": "^13.0.1",
+    "concurrently": "^10.0.5",
+    "node-gyp": "^8.2.0",
     "node-sass": "^9.0.0",
     "parcel": "^2.0.0-rc.0",
     "postcss": "^8.3.8"
+  },
+  "overrides": {
+    "svgo": "^3.3.3",
+    "@parcel/optimizer-svgo": {
+      "svgo": "^2.8.1"
+    },
+    "@parcel/optimizer-htmlnano": {
+      "svgo": "^2.8.1"
+    }
   }
 }
