@@ -21,5 +21,14 @@
     "node-sass": "^9.0.0",
     "parcel": "^2.0.0-rc.0",
     "postcss": "^8.3.8"
+  },
+  "overrides": {
+    "svgo": "^3.3.3",
+    "@parcel/optimizer-svgo": {
+      "svgo": "^2.8.1"
+    },
+    "@parcel/optimizer-htmlnano": {
+      "svgo": "^2.8.1"
+    }
   }
 }
